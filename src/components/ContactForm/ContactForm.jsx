@@ -30,8 +30,9 @@ export const ContactForm = ({addNewContact}) => {
             <Title>Phonebook</Title>
                 <Form autoComplete="off" onSubmit={handleSubmit}>
                 <Label htmlFor="name">Name
-                <Input onChange={handleChange}
-          value={name}
+            <Input
+              onChange={handleChange}
+          // value={name}
   type="text"
   name="name"
   pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
