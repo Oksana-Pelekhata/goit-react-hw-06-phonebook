@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { Section, StyledForm, Label, Input, Title } from './styled';
 import { useDispatch } from 'react-redux';
-import { setFilterAction } from 'redux/actions';
+import { setFilter } from 'redux/filterSlice';
 
 export const FilterForm = ({ label }) => {
   const dispatch = useDispatch()
 
   const handleChange = ({target : {value}}) => {
-    dispatch(setFilterAction(value))
+    dispatch(setFilter(value))
   }
   return (
     <Section>

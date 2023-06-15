@@ -1,7 +1,7 @@
 import {Section, ContactItem, ContactButton, ContactName } from './styled'
 import { useDispatch, useSelector } from 'react-redux';
 import { contactsSelector, filterSelector } from 'redux/selectors';
-import { deleteContactAction } from 'redux/actions';
+import { deleteContact } from 'redux/contactsSlice';
 
 
 export const ContactList = () => {
@@ -19,7 +19,7 @@ const contacts = useSelector(contactsSelector)
   const getFilteredContacts = filterContacts()
 
   const handleDelete = (id) => {
-    dispatch(deleteContactAction(id))
+    dispatch(deleteContact(id))
   }
     return (
         <Section>
