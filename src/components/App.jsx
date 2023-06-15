@@ -57,19 +57,17 @@ export const App = () => {
     return (
       <ThemeProvider theme={theme}>
         <ContactForm  />
-        {/* <FilterForm
+        <FilterForm
           label="Find contacts by name"
-          onChange={handleFilterChange}
-          value={filter}
         />
-        {contacts.length === 0 ? (
+        {/* {contacts.length === 0 ? (
           <p>You don't have contacts yet</p>
-        ) : (
+        ) : ( */}
           <ContactList
-            options={getFilteredContacts()}
-            handleDelete={handleDelete}
+            // options={getFilteredContacts()}
+            // handleDelete={handleDelete}
           />
-        )} */}
+        {/* )} */}
       </ThemeProvider>
     );
   }
